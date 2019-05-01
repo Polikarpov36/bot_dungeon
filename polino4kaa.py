@@ -2,6 +2,7 @@ from Server import Server, list_of_users
 from config import vk_api_token
 import random
 from robbery import dungeon_2
+import os
 server1 = Server(vk_api_token, 181682083, 'server1')
 
 
@@ -168,19 +169,22 @@ class Dungeon:
 
 
 def process(current_user):
+    port = os.getenv('PORT', default=8000)
+    updater.start_webhook(port=port)
     hero = Hero(current_user)
     dungeon = Dungeon(dungeons[0][0], dungeons[0][1], dungeons[0][2], dungeons[0][3], dungeons[0][4], current_user)
     dungeon.in_dungeon(hero)
     hero.__init__(current_user)
     server1.send_msg(current_user, 'спасибо за игру')
     list_of_users.remove(current_user)
-
-
+                         
 dungeons = list()
 dungeons.append(dungeon_2)
 while True:
     current_user = server1.start()
     process(current_user)
+
+
 
 
 
