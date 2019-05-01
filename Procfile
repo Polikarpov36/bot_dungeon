@@ -1,1 +1,1 @@
-web: python polino4ka.py runserver 0.0.0.0:5000
+web: python polino4kaa.py runserver 0.0.0.0:5000
