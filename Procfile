@@ -1,1 +1,1 @@
-web: python polino4kaa.py
+worker: python polino4kaa.py
