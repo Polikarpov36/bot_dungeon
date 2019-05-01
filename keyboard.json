@@ -1,0 +1,49 @@
+{
+  "one_time": true,
+  "buttons": [
+    [{
+      "action": {
+        "type": "text",
+        "label": "Атака"
+      },
+      "color": "positive"
+    },
+      {
+        "action": {
+          "type": "text",
+          "label": "Уклонение"
+        },
+        "color": "positive"
+      },
+        {
+      "action": {
+        "type": "text",
+        "label": "Защита"
+      },
+      "color": "positive"
+    }],
+    [{
+      "action": {
+        "type": "text",
+        "label": "Аптечка"
+      },
+      "color": "primary"
+    },
+      {
+        "action": {
+          "type": "text",
+          "label": "Сменить оружие"
+        },
+        "color": "primary"
+      }],
+    [{
+      "action": {
+        "type": "text",
+        "label": "Достать глоссарий"
+      },
+      "color": "negative"
+    }
+
+      ]
+  ]
+}
