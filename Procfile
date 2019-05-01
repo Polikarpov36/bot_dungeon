@@ -1,1 +1,1 @@
-web: python Server.py
+web: python polino4kaa.py
